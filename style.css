@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #15394c;
+}
+
+header {
+    width: 100%;
+}
+
+header h1 {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    border-bottom: 2px solid white;
+    padding: 15px;
+    text-transform: uppercase;
+}
+
+.tabela-periodica {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 20px auto;
+}
+
+.tabela-periodica td {
+    border: 2px solid #000;
+    width: 70px;  
+    height: 70px; 
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tabela-periodica td[colspan="16"] {
+    border-top: none;
+    padding: 0;
+}
+
+.tabela-periodica tr:first-child td {
+    border-bottom: none;
+}
+
+.tabela-periodica tr:nth-child(2) td {
+    border-bottom: none;
+}
+
+.tabela-periodica tr:nth-child(6) td[colspan="1"] {
+    border-bottom: none;
+}
+
+.tabela-periodica tr:nth-child(7) td[colspan="1"] {
+    border-bottom: none;
+}
+
+.tabela-periodica tr:nth-child(8) td {
+    height: 30px !important; 
+}
+
+.tabela-periodica td[colspan="10"] {
+    border-top: none;
+    padding: 0;
+}
+
+.tabela-periodica td[colspan="1"] {
+    border-top: none;
+    padding: 0;
+}
+
+.tabela-periodica td[colspan="18"] {
+    border: none;
+    padding: 0;
+}
+
+.tabela-periodica td[colspan="3"] {
+    border: none;
+    padding: 0;
+}
+
+.tabela-periodica h5,
+.tabela-periodica h4,
+.tabela-periodica p {
+    margin: 0;
+    padding: 0;
+}
+
+.tabela-periodica h5 {
+    font-size: 10px;
+}
+
+.tabela-periodica h3 {
+    font-size: 24px;
+    margin: 5px 0;
+}
+
+.tabela-periodica h4 {
+    font-size: 12px;
+    font-family: 'Roboto Slab', serif;
+}
+
+.tabela-periodica p {
+    font-size: 10px;
+}
+
+[data-grupo="nao-metais"] {
+    background-color: #23c1f1;
+}
+
+[data-grupo="gases-nobres"] {
+    background-color: #fcdc08;
+}
+
+[data-grupo="metais-alcalinos"] {
+    background-color: #95d4cc;
+}
+
+[data-grupo="metais-alcalinos-terrosos"] {
+    background-color: #bde7fc;
+}
+
+[data-grupo="semi-metais"] {
+    background-color: #fcd9e7;
+}
+
+[data-grupo="lantanideos"] {
+    background-color: #f47622;
+}
+
+[data-grupo="metais-de-transicao"] {
+    background-color: #fffefc;
+}
+
+[data-grupo="outros-metais"] {
+    background-color: #95c941;
+}
+
+[data-grupo="halogenios"] {
+    background-color: #fbf3a8;
+}
+
+[data-grupo="actnidios"] {
+    background-color: #f8b62c;
+}
+
+#show-H:checked ~ .tabela-periodica td[data-grupo="nao-metais"] label {
+    transform: scale(1);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.etiquetas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin-top: 20px; 
+}
+
+.grupo-etiquetas {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-basis: 60%; 
+}
+
+.grupo-etiquetas div {
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: black;
+    font-family: 'Roboto Slab', serif;
+}
+
+footer p {
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+}
+
